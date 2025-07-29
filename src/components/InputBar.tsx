@@ -4,13 +4,11 @@ import { Select, SelectTrigger, SelectValue, SelectContent, SelectItem } from ".
 interface InputBarProps {
     inputText : string,
     setInputText : (val : string) => void,
-    sourceLang : string,
     setSourceLang : (val: string) => void,
-    targetLang : string,
     setTargetLang : (val : string) => void
 }
 
-const InputBar= ({inputText,setInputText,sourceLang,setSourceLang,targetLang,setTargetLang}: InputBarProps) =>{
+const InputBar= ({inputText,setInputText,setSourceLang,setTargetLang}: InputBarProps) =>{
     return(
         <div className="space-y-4">
             <Input placeholder="Enter text to translate" value={inputText} onChange={(e)=>setInputText(e.target.value)}/>

@@ -34,7 +34,7 @@ const Home = () =>{
     return(
         <div className="max-w-xl mx-auto py-10 space-y-6">
       <h1 className="text-2xl font-bold text-center">🌐 Language Translator</h1>
-        <InputBar inputText={inputText} setInputText={setInputText} sourceLang={sourceLang} setSourceLang={setSourceLang} targetLang={targetLang} setTargetLang={setTargetLang}/>
+        <InputBar inputText={inputText} setInputText={setInputText} setSourceLang={setSourceLang} setTargetLang={setTargetLang}/>
         <TranslateButton onClick={handleTranslate}/>
         <OutputBox result={result}/>
          </div>
